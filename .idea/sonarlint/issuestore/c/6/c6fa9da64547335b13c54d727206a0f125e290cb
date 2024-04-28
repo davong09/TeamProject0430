@@ -1,0 +1,22 @@
+
+
+java:S1192)"HDefine a constant instead of duplicating this literal "C102-01" 3 times.(ûµ­âøÿÿÿÿ8ËŒ˜¤ò1J$c4c909e2-42eb-45c0-806d-4035520f11b7
+
+java:S1192"HDefine a constant instead of duplicating this literal "1292303" 4 times.(¼¤Ö·ıÿÿÿÿ8ÌŒ˜¤ò1J$491b1f7a-cc47-45cd-b9a5-c6c4d6e05361
+
+java:S1192"HDefine a constant instead of duplicating this literal "1292002" 4 times.(áôÎûûÿÿÿÿ8ÍŒ˜¤ò1J$da42afc6-6dec-419f-ad29-2b4e55825c25
+
+java:S1192"HDefine a constant instead of duplicating this literal "1292003" 3 times.(ßƒÇÿÿÿÿÿ8ÍŒ˜¤ò1J$f7d8d1f6-aca6-4156-9ebc-a8e4f60ea4f3
+Š
+java:S1192"HDefine a constant instead of duplicating this literal "1292001" 4 times.(ØØËF8ÍŒ˜¤ò1J$afeaae2e-1bb7-492e-bf96-b40ce18adbcf
+¸
+java:S13195"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(…ó¨ûøÿÿÿÿ8ÛŒ˜¤ò1J$393b3487-85ac-4a8e-9110-de3e7b3ee783
+²
+java:S13199"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(†Ã€s8ÛŒ˜¤ò1J$58a08740-e701-4688-90fa-e6ec0747cc53
+³
+java:S1319="pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ó¯Š¿8ÛŒ˜¤ò1J$f9d21aa8-fcc5-4c50-9f82-1fb1b17e56bb
+³
+java:S1319A"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(†âÏ8ÜŒ˜¤ò1J$6ef2c99b-8971-434f-a2f9-1a2446886298
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢Æ»J$7600d0a7-0e1f-425c-b2df-dd2c693a6567
+z
+java:S1128"2Remove this unused import 'javax.xml.crypto.Data'.(¦¿çˆıÿÿÿÿ8¢ñ­ªò1J$1d7a7674-785a-4cdb-a220-57447543ea64
