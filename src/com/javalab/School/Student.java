@@ -63,4 +63,16 @@ public class Student {
         this.department = department;
     }
     // toString() 오버라이딩
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id='" + id + '\'' +
+                ", jumin='" + jumin + '\'' +
+                ", name='" + name + '\'' +
+                ", year=" + year +
+                ", address='" + address + '\'' +
+                ", department=" + department +
+                '}';
+    }
 }

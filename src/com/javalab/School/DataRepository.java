@@ -31,9 +31,9 @@ public class DataRepository {
         professors.add(new Professor("92501", "620505-1200546", "박철재", 925, "교수", "2007"));
         professors.add(new Professor("92502", "740101-1830264", "장민석", 920, "조교수", "2005"));
         // 학과 데이터를 ArrayList에 추가
-        departments.add(new Department("920", "컴퓨터공학과", "201호"));
-        departments.add(new Department("923", "산업공학과", "207호"));
-        departments.add(new Department("925", "전자공학과", "308호"));
+        departments.add(new Department(920, "컴퓨터공학과", "201호"));
+        departments.add(new Department(923, "산업공학과", "207호"));
+        departments.add(new Department(925, "전자공학과", "308호"));
         // 성적 데이터를 ArrayList에 추가
         takes.add(new Takes("1292001", "C101-01", "B+"));
         takes.add(new Takes("1292001", "C103-01", "A+"));
