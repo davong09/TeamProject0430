@@ -2,22 +2,22 @@ package com.javalab.School;
 
 public class Department {
 
-    private int id;			// 학과 코드
+    private String id;			// 학과 코드
     private String name;		// 학과명
     private String office;		// 학과 사무실
 
     public Department() {
     }
-    public Department(int id, String name, String office) {
+    public Department(String id, String name, String office) {
         this.id = id;
         this.name = name;
         this.office = office;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
     public String getName() {

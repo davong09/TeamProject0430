@@ -101,7 +101,7 @@ public class SchoolManagementEx {
 
     private static void displayProfessor() {
         System.out.println("등록된 교수 목록:");
-        System.out.println("교수 ID : \t 이름 : \t 학과 코드 : \t 직급 : \t 입사일 : ");
+        System.out.println("교수ID 이름 학과코드 직급 입사일");
         for (Professor p : repo.getProfessors()) {
             System.out.println(p.getId() + " " + p.getName() + " " + p.getDepartment() + " " + p.getGrade() + " " + p.getHiredate());
         }
@@ -167,13 +167,13 @@ public class SchoolManagementEx {
 
         switch (choice) {
             case 1 :
-                registerDepartment();
+                registerDepartment(scanner);
             case 2 :
                 displayDepartment();
             case 3 :
-                updateDepartment();
+                updateDepartment(scanner);
             case 4 :
-                deleteDepartment();
+                deleteDepartment(scanner);
             case 5 :
                 return;
             default :
@@ -181,10 +181,9 @@ public class SchoolManagementEx {
         }
 
     }
-    private static void registerDepartment() {
-        Scanner scanner = new Scanner(System.in);
+    private static void registerDepartment(Scanner scanner) {
         System.out.println("학과 코드: ");
-        int id = scanner.nextInt();
+        String id = scanner.nextLine();
         System.out.println("학과명: ");
         String name = scanner.nextLine();
         System.out.println("학과 사무실");
@@ -195,13 +194,43 @@ public class SchoolManagementEx {
         System.out.println("학과 정보가 성공적으로 등록되었습니다.");
     }
     private static void displayDepartment() {
-
+        System.out.println("등록된 학과 목록");
+        System.out.println("학과코드 학과명 학과사무실");
+        for(Department d : repo.getDepartments()) {
+            System.out.println(d.getId() + " " + d.getName() + " " + d.getOffice());
+        }
     }
-    private static void updateDepartment() {
+    private static void updateDepartment(Scanner scanner) { // 학과 정보 수정
+        System.out.println("수정할 학과 코드를 입력해주세요");
+        String id = scanner.nextLine();
+        for(Department d : repo.getDepartments()) {
+            if(d.getId().equals(id)) {
+                System.out.println("수정할 학과명: ");
+                String name = scanner.nextLine();
+                System.out.println("수정할 학과 사무실: ");
+                String office = scanner.nextLine();
 
+                d.setName(name);
+                d.setOffice(office);
+                System.out.println("학과 정보가 업데이트 되었습니다.");
+                return;
+            }
+            System.out.println("해당 코드의 학과를 찾을 수 없습니다.");
+        }
     }
-    private static void deleteDepartment() {
 
+
+    private static void deleteDepartment(Scanner scanner) { // 학과 정보 삭제
+        System.out.println("삭제할 학과 코드를 입력해주세요");
+        String id = scanner.nextLine();
+        for ( int i = 0; i < repo.getDepartments().size(); i++) {
+            if (repo.getDepartments().get(i).getId().equals(id)) {
+                repo.getDepartments().remove(i);
+                System.out.println("학과 정보가 삭제되었습니다.");
+                return;
+            }
+        }
+        System.out.println("해당 코드의 학과를 찾을 수 없습니다.");
     }
 
 // 학과 관련 업무 메소드 끝
@@ -274,7 +303,7 @@ public class SchoolManagementEx {
 
     private static void displayStudents() {
         System.out.println("등록된 학생 목록:");
-        System.out.println("학생 ID : \t 이름 : \t 학년 \t 주소 : \t 학과 코드 : ");
+        System.out.println("학생ID 이름 학년 주소 학과코드");
         for (Student s : repo.getStudents()) {
             System.out.println(s.getId() + " " + s.getName() + " " + s.getYear() + " " + s.getAddress() + " " + s.getDepartment());
         }
