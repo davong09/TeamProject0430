@@ -12,7 +12,8 @@ public class Professor {
     private String hiredate; // 교수 hiredate
 
     //기본생성자
-    public Professor() {}
+    public Professor() {
+    }
 
     //오버로딩 생성자
     public Professor(String id, String jumin, String name, int department, String grade, String hiredate) {
